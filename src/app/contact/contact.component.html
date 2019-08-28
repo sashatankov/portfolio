@@ -1,0 +1,81 @@
+
+<form (ngSubmit)="onSubmit()">
+  <div class="contact-form">
+    <div class="form-header">
+      <h3> Contact Me!</h3>
+    </div>
+    <div class="form-content">
+       leave your information and I'll get back to you as soon as possible
+    </div>
+    <div class="form-input-element">
+      <div class="input-label">
+        <label>
+          Name:
+        </label>
+      </div>
+      <div class="input-field">
+        <input  [(ngModel)]="contact.name" name="name" placeholder="Enter your name..."
+                onfocus="this.placeholder = ''" onblur="this.placeholder='Enter your name...'" required>
+
+      </div>
+    </div>
+    <div class="form-input-element">
+      <div class="input-label">
+        <label>
+          Email:
+        </label>
+      </div>
+
+      <div class="input-field">
+        <input type="email" name="email" [(ngModel)]="contact.email" placeholder="Email"
+               onfocus="this.placeholder = ''" onblur="this.placeholder='Email'" required>
+      </div>
+    </div>
+    <div class="form-input-element">
+      <div class="input-label">
+        <label>
+          I am a...
+        </label>
+      </div>
+      <div class="input-field">
+        <select [(ngModel)]="contact.role" name="role" required>
+          <option *ngFor="let role of roles" [value] = "role">{{role}}</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-input-element">
+      <div class="input-submit">
+        <input type="submit" value="Submit" class="submit-btn">
+      </div>
+    </div>
+
+  </div>
+
+</form>
+
+<div class="social-media-links">
+  <div class="social-media-links-content">
+    <div class="social-media-link">
+      <a href="https://www.facebook.com/sasha.tankov" ><i class = "fab fa-facebook-f"></i></a>
+    </div>
+    <div class="social-media-link">
+      <a href = "https://twitter.com/S4SH4_T4NKOV"><i class="fab fa-twitter"></i></a>
+    </div>
+    <div class="social-media-link">
+      <a href="https://www.linkedin.com/in/sasha-tankov-55462310a/"><i class = "fab fa-linkedin-in"></i></a>
+    </div>
+    <div class="social-media-link">
+      <a href = "https://github.com/sashatankov"> <i class="fab fa-github"></i></a>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="credits">
+  <div>Icons made by <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+  <div>Icons made by <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+  <div>Icons made by <a href="https://www.flaticon.com/authors/dave-gandy" title="Dave Gandy">Dave Gandy</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+  <div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+</div>
+

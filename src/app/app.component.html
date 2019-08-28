@@ -1,0 +1,20 @@
+<div>
+  <app-header (buttonClicked)="openSideMenu($event)"></app-header>
+  <app-welcome-screen></app-welcome-screen>
+
+  <div [ngClass]="{'mobile-nav': !this.sideMenuOpened,  'mobile-nav-opened': this.sideMenuOpened }">
+    <button (click)="closeSideMenu()"><i class="fas fa-times"></i></button>
+    <a (click)="closeSideMenu()" href="#app-about">About</a>
+    <a (click)="closeSideMenu()" href="#app-skills">Skills</a>
+    <a (click)="closeSideMenu()" href="#app-project">Projects</a>
+    <a (click)="closeSideMenu()" href="#app-contact">Contact</a>
+  </div>
+
+</div>
+
+<app-about id="app-about"></app-about>
+<app-project id="app-project"> </app-project>
+<app-contact id="app-contact"></app-contact>
+
+
+
