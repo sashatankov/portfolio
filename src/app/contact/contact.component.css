@@ -1,0 +1,247 @@
+div {
+  height: 50%;
+  width: 100%;
+
+}
+.credits {
+  height: 5%;
+  width: 100%;
+  background-color: #4F4E44;
+}
+.credits div {
+  background-color: #4F4E44;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 50%;
+  background-color: #4F4E44;
+  font-size: 1.5em;
+  color: white;
+
+}
+label {
+  margin: 0.8em;
+}
+input {
+  font-size: 0.8em;
+  background-color: transparent;
+  border-radius: 40px;
+  border: 2px solid #dddddd;
+  padding: 0.7em;
+  color: #dddddd;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+select, option {
+  font-size: 0.8em;
+  background-color: transparent;
+  border: 2px solid #dddddd;
+  border-radius: 40px;
+  padding: 0.7em;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+
+}
+::placeholder{
+  color: #dddddd;
+}
+input:focus{
+  outline: none;
+  color: #dddddd;
+}
+select:focus {
+  outline: none;
+}
+
+
+
+.credits {
+  font-size: 0.7em;
+}
+.form-header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+}
+.form-content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+.form-input-element{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.8em 0;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+.input-label {
+  width: 10%;
+  box-sizing: border-box;
+}
+.input-field {
+  width: 25%;
+  box-sizing: border-box;
+}
+
+.input-submit {
+  width: 10%;
+  box-sizing: border-box;
+
+}
+.input-field:focus {
+  outline: none;
+}
+
+.input-submit input {
+  color: #dddddd;
+  transition: 0.2s ease-in-out;
+}
+.input-submit input:hover {
+  color: #4F4E44;
+  background-color: #dddddd;
+  border-color: #4F4E44;
+
+}
+.social-media-links {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  background-color: #4F4E44;
+
+
+}
+.social-media-links-content {
+  height: 100%;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}
+.social-media-link {
+  height: 100%;
+  width: 25%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s ease-in-out;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.social-media-link a i:hover{
+  transform: scale(1.5);
+}
+.social-media-link a {
+  color: #dddddd;
+}
+.social-media-link a:hover {
+  color: #4F4E44;
+}
+.social-media-link a:visited {
+  text-decoration: none;
+  color: #dddddd;
+}
+.social-media-link a i, .social-media-link a {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+.social-media-link a i {
+  color: #dddddd;
+  margin: 1em;
+  background-color: transparent;
+  transition: transform 0.3s ease-in-out;
+  font-size: 1.5em;
+}
+
+@media screen and (max-width: 750px) {
+  .form-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 0.9em;
+    flex-wrap: wrap;
+  }
+
+  .form-input-element{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0.8em 0;
+  }
+
+  .input-label {
+    width: 25%;
+  }
+  .input-field {
+    width: 45%;
+  }
+
+  .input-submit {
+    width: 15%;
+  }
+}
+@media screen and (max-width: 650px){
+  .form-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 0.8em;
+    flex-wrap: wrap;
+  }
+  .input-submit {
+    width: 25%;
+  }
+  .input-label {
+    width: 35%;
+  }
+  .social-media-links-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .social-media-links {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    background-color: #4F4E44;
+
+
+
+  }
+}
+@media screen and (max-width: 500px) {
+  .form-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    text-align: center;
+  }
+}
+
+

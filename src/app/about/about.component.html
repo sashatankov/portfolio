@@ -1,0 +1,37 @@
+
+<div class="about">
+  <div class="about-img">
+    <img src="../../assets/images/me400.jpg" alt="me">
+  </div>
+  <div class="about-content">
+    <p>
+      Hi, I'm Sasha and I'm a Computer Science Student at The Hebrew University.
+      Currently I'm looking for a full-time position as a software
+      developer. My carrier interests are: full-stack development and data science.
+      I'm fluent in English, Russian and Hebrew. I'm a diligent worker and a team-player.
+      If you're looking for a developer, Contact me <a href="#app-contact">here</a>
+    </p>
+  </div>
+
+  <div class=""></div>
+</div>
+
+
+<div class="skills" id="app-skills">
+  <div class="skills-headline">
+    Here's what I know
+  </div>
+  <div class="skills-content">
+    <div class='skill' *ngFor="let skill of skills" >
+      <img src="{{skill.icon}}">
+      <p>
+        {{skill.name}}
+      </p>
+    </div>
+  </div>
+
+</div>
+
+
+
+

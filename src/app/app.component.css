@@ -1,0 +1,156 @@
+div {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient( rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85) ), url('../assets/images/programmer.jpg');
+  position: relative;
+  z-index: 1;
+}
+.mobile-nav {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: white;
+  background: linear-gradient( rgba(0, 0, 0, 1), rgba(0, 0, 0, 1) ), url('../assets/images/programmer.jpg');
+  transition: 0.5s ease-in-out;
+  box-sizing: border-box;
+  padding-top: 4em;
+}
+.mobile-nav-opened {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+  transition: 0.5s ease-in-out;
+  background: linear-gradient( rgba(0, 0, 0, 1), rgba(0, 0, 0, 1) ), url('../assets/images/programmer.jpg');
+  box-sizing: border-box;
+  padding-top: 4em;
+}
+.mobile-nav-opened a {
+  width: 100%;
+  height: 7%;
+  box-sizing: border-box;
+  font-size: 1.5em;
+  text-decoration: none;
+  color: #818181;
+  text-align: center;
+  padding: 1.3em;
+
+}
+.mobile-nav a {
+  width: 100%;
+  height: 5%;
+  box-sizing: border-box;
+  font-size: 1.5em;
+  text-decoration: none;
+  color: #818181;
+  text-align: center;
+  padding: 1.3em;
+
+}
+button:focus {
+  outline: none;
+}
+.mobile-nav button {
+  display: flex;
+  background-color: transparent;
+  color: #dddddd;
+  border: none;
+  font-size: 1.5em;
+  position: absolute;
+  top: 1em;
+  right: 1em;
+}
+
+.mobile-nav-opened button {
+  display: flex;
+  background-color: transparent;
+  color: #dddddd;
+  border: none;
+  font-size: 1.5em;
+  position: absolute;
+  top: 1em;
+  right: 1em;
+}
+
+app-header {
+  width: 100%;
+  height: 5%;
+  //background-color: crimson;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2em;
+  color: white;
+}
+app-welcome-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 95%;
+  width: 100%;
+  //background-color: cornflowerblue;
+  font-size: 2em;
+  color: white;
+}
+app-about {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #535249;
+
+}
+app-contact {
+
+  width: 100%;
+  background-color: #4F4E44;
+
+}
+
+@media screen and (max-width: 950px){
+  app-about {
+    height: 200%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #535249;
+
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .mobile-nav {
+    overflow: visible;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  app-about {
+    height: 360%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #535249;
+
+  }
+  div {
+    width: 100%;
+    height: 115%;
+    background: linear-gradient( rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85) ), url('../assets/images/programmer.jpg');
+    position: relative;
+  }
+}
+
