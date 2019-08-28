@@ -5,7 +5,6 @@ import { AppComponent } from './app.component';
 import { WelcomeScreenComponent } from './welcome-screen/welcome-screen.component';
 import { HeaderComponent } from './header/header.component';
 import { AboutComponent } from './about/about.component';
-import { SkillComponent } from './skill/skill.component';
 import { ContactComponent } from './contact/contact.component';
 import {FormsModule} from '@angular/forms';
 import { ProjectsComponent } from './projects/projects.component';
@@ -17,7 +16,6 @@ import {HttpClientModule} from '@angular/common/http';
     WelcomeScreenComponent,
     HeaderComponent,
     AboutComponent,
-    SkillComponent,
     ContactComponent,
     ProjectsComponent
   ],

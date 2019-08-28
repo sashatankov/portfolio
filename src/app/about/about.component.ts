@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {SkillComponent} from '../skill/skill.component';
+// import {SkillComponent} from '../skill/skill.component';
 
 
 @Component({
@@ -26,5 +26,17 @@ export class AboutComponent implements OnInit {
 
   ngOnInit() {
   }
+
+}
+
+class SkillComponent {
+  public skillName: string;
+  public skillIcon: string;
+
+  constructor(public name: any, public icon: any) {
+    this.skillName = name;
+    this.skillIcon = icon;
+  }
+
 
 }
