@@ -7,12 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./skill.component.css']
 })
 export class SkillComponent implements OnInit {
-  name: string;
-  icon: string;
+  public skillName: string;
+  public skillIcon: string;
 
-  constructor(name: string, icon: string) {
-    this.name = name;
-    this.icon = icon;
+  constructor(public name: string, public icon: string) {
+    this.skillName = name;
+    this.skillIcon = icon;
   }
 
   ngOnInit() {
