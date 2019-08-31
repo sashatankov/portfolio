@@ -21,7 +21,8 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-              "src/assets/images"
+              "src/assets/images",
+              "src/assets/images/me400.jpg"
             ],
             "styles": [
               "src/styles.css"
